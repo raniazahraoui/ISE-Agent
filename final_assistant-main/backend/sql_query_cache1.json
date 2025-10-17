@@ -1,0 +1,6 @@
+{
+  "4c5bc30cadabd73ef7b720a82a418d43": {
+    "question_template": "donne moi la classe de {family_relation}",
+    "sql_template": "SELECT c.CODECLASSEFR\nFROM classe c\nWHERE c.id = (\n    SELECT Classe \n    FROM inscriptioneleve \n    WHERE Eleve = (\n        SELECT id \n        FROM eleve \n        WHERE IdPersonne = 7818\n    )\n)"
+  }
+}
